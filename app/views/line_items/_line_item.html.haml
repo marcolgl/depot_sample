@@ -1,0 +1,22 @@
+-if line_item == @current_item
+	%tr{ :id => 'current_item'}
+		%td
+			= line_item.product.title
+		%td
+			&times;
+			= line_item.quantity
+		%td
+			= line_item.total_price
+		%td
+			= button_to 'Remove', line_item, method: :delete, remote: true
+-else	
+	%tr
+		%td
+			= line_item.product.title
+		%td
+			&times;
+			= line_item.quantity
+		%td
+			= line_item.total_price
+		%td
+			= button_to 'Remove', line_item, method: :delete, remote: true

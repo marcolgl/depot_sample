@@ -1,0 +1,5 @@
+// add a line_item to the cart
+// if cart was empty, show it sliding
+$('#cart').html("<%=j render(@cart) %>");
+if ($('#cart tr').length == 3) { $('#cart').show('slide', 1000); console.log("check1");}
+$('#current_item').css({'background-color':'rgba(106, 90, 205, 0.3)'}).animate({'background-color':'white'}, 1000);

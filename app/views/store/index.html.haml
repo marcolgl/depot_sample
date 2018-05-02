@@ -1,0 +1,18 @@
+%p#notice
+	= notice
+%h1 
+	A simple Catalogue list
+-@products.each do |product|
+	.entry 
+		= image_tag(product.image_url)
+		%h3 
+			= product.title
+		.description
+			= sanitize(product.description)
+		.price_line
+			%span.price 	
+				Price: 
+				= product.price.to_s+" €"
+			= button_to 'Add to Cart', line_items_path(product_id: product), remote: true
+	%br
+

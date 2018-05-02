@@ -1,0 +1,54 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.store{
+
+	h1 {
+	  padding-bottom: 1.5em;
+	  font-family:	"Orbitron";
+	  color: #483D8B;
+	  border-bottom: 3px dotted #483D8A; 
+	}
+
+	.entry {
+	  overflow: auto;
+	  margin-top: 1em;
+	  padding-bottom: 1em;
+	  border-bottom: 2px groove #483D8A;  
+	  min-height: 200px;
+	}
+
+	img {
+	  width: 150px;
+	  position: absolute;
+	}
+
+	h3 {
+		font-family: "Orbitron";
+		margin-left: 150px;
+		color: #483D8A;
+	}
+
+	.description {
+		margin-left: 160px;
+	}
+
+	div.price_line {
+		margin-left: 150px;
+		margin-bottom: 0.8em;
+
+		form, div {
+		display: inline;
+		margin-left: 20px;
+		}
+	}
+
+	.price {
+		padding-left: 10px;
+		font-weight: bold;
+		color: #483D8A;
+	}
+
+}

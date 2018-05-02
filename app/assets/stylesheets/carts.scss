@@ -1,0 +1,29 @@
+// Place all the styles related to the Carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.carts, #cart {
+	
+		padding: 10px;
+		border: 2px solid;
+		border-style: groove;
+		border-radius: 10px 10px 10px 10px;
+
+		th {
+			text-align: left;
+		}
+
+		td {
+			text-align: left;
+			border: 2px solid black;
+		}
+
+		.intes_cell {
+			text-align: right;
+		}
+
+		td .total_cell {
+			text-size: 125%;
+		}
+
+}

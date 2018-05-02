@@ -1,0 +1,21 @@
+%h2 Your personal Cart
+
+%table
+	%tr
+		%th Item
+		%th Quantity
+		%th Price
+	=render(cart.line_items)
+	%br
+	%tr.total_line
+		%td.intes_cell{:colspan => '2'} Total
+		%td.total_cell 
+			= number_to_currency(cart.total_price)
+-if session[:counter]>5
+	.counter
+		The counter is:
+		= session[:counter]
+%br
+= button_to 'Proceed to checkout', new_order_path, method: :get
+
+= button_to 'Empty cart', cart, method: :delete, data: {confirm: 'Are you sure?'}, remote: true

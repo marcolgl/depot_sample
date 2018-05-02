@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body, body > p, body > ol, body > ul, body >td {margin: 8px !important}
+
+
+
+#notice {
+	#background-color: red;
+	color: red;
+	font-size: 180%;
+	#padding: 0.8em;
+	#border: 2px solid black;
+}
+
+#notice:empty {
+	display: none;
+}
+
+
+
+
+#banner {
+	position: relative;
+	min-height: 100px;
+	background: rgba(106, 90, 205, 0.5);
+	padding: 10px;
+	border-bottom: 2px solid;
+	color: #483D8A;
+	text-align: center;
+
+	img {
+	position: absolute;
+	left:0;
+	width: 350px;
+	}
+}
+
+#columns {
+	display: flex;
+
+	#main {
+		padding: 2em;
+		flex: 1;
+	}
+
+	#side {
+		background: rgba(106, 90, 205, 0.3);
+		font-family: "Orbitron";
+		padding: 1.3em 2em;
+		max-width: 130px;
+
+		ul {
+			padding: 0;
+
+			
+			li {
+				font-size: large;
+				font-family: "Orbitron";
+				padding: 0.4em 1.3em;
+				list-style: none;
+			}
+
+			a {
+				color: #483D8A;
+				text-decoration: none;
+			} 
+			
+			a:hover{
+				font-weight: bold;
+				background: transparent;
+			}
+		}
+	}
+}
+
+

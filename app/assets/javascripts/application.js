@@ -10,6 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jquery
+//= require jquery-ui/effects/effect-blind
+//= require jquery-ui/effects/effect-slide
 //= require rails-ujs
 //= require turbolinks
 //= require_tree .

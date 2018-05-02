@@ -1,0 +1,4 @@
+// remove a line_item from the cart
+// if the cart is empty, hide it
+$('#cart').html("<%=j render(@cart) %>");
+if ($('#cart tr').length == 2) { $('#cart').hide('slide', 1000); console.log("check2");}
